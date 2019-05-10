@@ -27,4 +27,4 @@ int main(){
     printf("\n\n");
     free(result);
     return 0;
-
+}
