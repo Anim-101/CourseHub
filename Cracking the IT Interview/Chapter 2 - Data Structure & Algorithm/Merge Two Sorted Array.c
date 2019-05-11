@@ -7,19 +7,19 @@ int main(){
     scanf("%d", &bsize);
     csize = asize + bsize;
     int arrA[asize], arrB[bsize], arrC[csize];
-    printf("\n\nEnter First Non Sorted Array Values -->\n");
+    printf("\n\nEnter First Sorted Array Values -->\n");
     for(int i = 0; i < asize; i++){
         scanf("%d", &arrA[i]);
     }
-    printf("\n\nEnter Second Non Sorted Array Values -->\n");
+    printf("\n\nEnter Second Sorted Array Values -->\n");
     for(int i = 0; i < bsize; i++){
         scanf("%d", &arrB[i]);
     }
-    printf("\nFirst Non Sorted Array Values -->\n");
+    printf("\nFirst Sorted Array Values -->\n");
     for(int i = 0; i < asize; i++){
         printf("%d\n", arrA[i]);
     }
-    printf("nSecond Non Sorted Array Values -->\n");
+    printf("nSecond Sorted Array Values -->\n");
     for(int i = 0; i < bsize; i++){
         printf("%d\n", arrB[i]);
     }
