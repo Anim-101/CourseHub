@@ -6,7 +6,7 @@ void funcOne (int number)
     {
         printf("%d\n", number);
 		
-		funcOne(number - 1);
+	funcOne(number - 1);
     }
 }
 
