@@ -1,2 +1,2 @@
 
-Algorithm implementation based on the understanding from the book Data Structure and Algorithms Thinking * of Narasimha Karumanchi.
+Algorithm implementations based on the understanding from the book Data Structure and Algorithms Thinking by Narasimha Karumanchi.
