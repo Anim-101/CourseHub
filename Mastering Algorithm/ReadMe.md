@@ -1,1 +1,1 @@
-My Coding Experiences from Bari Sir's Course Mastering Algorithms.
+My Coding Experiences (Solutions and Practices) from Bari Sir's Course Mastering Algorithms.
