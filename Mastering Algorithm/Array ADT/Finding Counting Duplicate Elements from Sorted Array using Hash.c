@@ -25,9 +25,9 @@ void findingCountingDuplicateHash(struct Array array)
 
     int max = array.array[array.length - 1];
 
-    hashArray.size = max;
+    hashArray.size = max + 1;
 
-    hashArray.length = max;
+    hashArray.length = max + 1;
 
     for(int i = 0; i <= max; i++)
     {
