@@ -1,2 +1,3 @@
 # CourseHub
-Studies &amp; Practices &amp; Solutions from taken Courses.
+
+Online Courses and Tutorials based programming practices and codes.
