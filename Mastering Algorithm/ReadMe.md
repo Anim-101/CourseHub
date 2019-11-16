@@ -1,1 +1,1 @@
-My Coding Experiences (Solutions and Practices) from Bari Sir's Course Mastering Algorithms.
+## My Coding Experiences (Problems' Solutions and Practices) from Abdul Bari Sir's Course Mastering Algorithms from Udemy Platform.
