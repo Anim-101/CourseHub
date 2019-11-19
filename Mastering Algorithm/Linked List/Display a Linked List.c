@@ -5,7 +5,8 @@ struct Node
 {
     int data;
     struct Node *next;
-}*first = NULL;
+}
+*first = NULL;
 
 void Create(int array[], int number)
 {
