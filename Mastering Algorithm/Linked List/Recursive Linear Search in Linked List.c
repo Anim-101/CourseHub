@@ -61,7 +61,7 @@ struct Node *recursiveLinearSearch(struct Node *pointNode, int key)
     }
 
     return recursiveLinearSearch(pointNode->next, key);
-};
+}
 
 int main()
 {
