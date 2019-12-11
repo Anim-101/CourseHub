@@ -1,6 +1,0 @@
-D:\Codebit\CourseHub\JavaTPoint\C#\C# Programms\Fibonacci Series\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
-D:\Codebit\CourseHub\JavaTPoint\C#\C# Programms\Fibonacci Series\ConsoleApp1\bin\Debug\ConsoleApp1.exe
-D:\Codebit\CourseHub\JavaTPoint\C#\C# Programms\Fibonacci Series\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
-D:\Codebit\CourseHub\JavaTPoint\C#\C# Programms\Fibonacci Series\ConsoleApp1\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache
-D:\Codebit\CourseHub\JavaTPoint\C#\C# Programms\Fibonacci Series\ConsoleApp1\obj\Debug\ConsoleApp1.exe
-D:\Codebit\CourseHub\JavaTPoint\C#\C# Programms\Fibonacci Series\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
