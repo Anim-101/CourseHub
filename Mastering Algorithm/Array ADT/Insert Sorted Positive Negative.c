@@ -97,7 +97,7 @@ int main()
 
     Display(array);
 
-    if(isSorted == 0)
+    if(isSorted(array) == 0)
     {
         printf("\nGiven List is not Sorted\n");
     }
