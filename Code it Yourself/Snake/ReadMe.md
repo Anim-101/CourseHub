@@ -19,3 +19,5 @@ Along with basic cpp header files, thread and windows.h header files are require
 * If any collision happens then space can be used to play this game from beginning.
 
 ## UI
+
+![alt-text](https://github.com/Anim-101/CourseHub/blob/master/Code%20it%20Yourself/Snake/Snake%20UI/Snake.PNG "Snake")
