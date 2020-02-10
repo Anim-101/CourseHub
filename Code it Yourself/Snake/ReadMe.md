@@ -9,8 +9,8 @@ This project was completed as part of a tutorial and learning experiance from ja
 
 .cpp file is given to run this project. This can be run with Microsoft Visual Studio.
 
-* Code: [Snake.cpp]()
-* Exe: [Snake.ex]()
+* Code: [Snake.cpp](https://github.com/Anim-101/CourseHub/blob/master/Code%20it%20Yourself/Snake/Snake/Snake.cpp)
+* Exe: [Snake.exe](https://github.com/Anim-101/CourseHub/blob/master/Code%20it%20Yourself/Snake/Executable/Snake.exe)
 
 ## Requirements
 
