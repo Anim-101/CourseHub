@@ -9,6 +9,9 @@ This project was completed as part of a tutorial and learning experiance from ja
 
 .cpp file is given to run this project. This can be run with Microsoft Visual Studio.
 
+* Code: [Snake.cpp]()
+* Exe: [Snake.ex]()
+
 ## Requirements
 
 Along with basic cpp header files, thread and windows.h header files are required to run this code.
