@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="discription" content="This is to Learn Forms and Input" />
+    <meta name="keyword" content="Web Design, Web Development" />
+    <meta name="robots" content="NOINDEX, NOFOLLOW" />
+    <title>Forms and Input</title>
+  </head>
+  <body>
+    <form action="#">
+      <!-- Name - Text Input -->
+      <div>
+        <label for="name">Name</label><br />
+        <input type="text" id="name" name="name" value="John" />
+      </div>
+
+      <!-- Email - Email Input -->
+      <div>
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter an Email"
+        />
+      </div>
+
+      <!-- Text Area Input -->
+      <div>
+        <label for="message">Message</label><br />
+        <textarea name="message" id="message" cols="50" rows="10"></textarea>
+      </div>
+
+      <!-- Select Input -->
+      <div>
+        <label for="sex">Sex</label>
+        <select name="sex" id="sex">
+          <option value="male" selected>Male</option>
+          <option value="female">FeMale</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <!-- Number Input -->
+      <div>
+        <label for="age">Age</label><br />
+        <input type="number" name="age" id="age" />
+      </div>
+
+      <!-- Date Input -->
+      <div>
+        <label for="birthdate">Birthday</label><br />
+        <input type="date" name="birthdate" id="birthdate" />
+      </div>
+
+      <!-- Radio Button Input -->
+      <div>
+        <label for="membership">MemberShip</label>
+        <input type="radio" name="membership" value="simple" id="simple" />
+        Simple
+        <input
+          type="radio"
+          name="membership"
+          value="standard"
+          id="standard"
+          checked
+        />
+        Standard
+        <input type="radio" name="membership" value="super" id="super" /> Super
+      </div>
+
+      <!-- CheckBox Input -->
+      <div>
+        <label for="likes">I Like</label>
+        <input type="checkbox" name="likes" value="Bike" id="likes" />
+        Bike
+        <input type="checkbox" name="likes" value="Car" id="likes" />
+        Car
+        <input type="checkbox" name="likes" value="Cycle" id="likes" />
+        Cycle
+      </div>
+      <div>
+        <!-- Using Submit Input -->
+        <input type="submit" vlaue="submit" />
+
+        <!-- Using Button Input -->
+        <button type="submit">Submit</button>
+
+        <!-- Resset Button Input -->
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
