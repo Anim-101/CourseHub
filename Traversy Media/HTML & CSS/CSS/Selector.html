@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="discription" content="This is to Learn Selector in CSS" />
+    <meta name="keyword" content="Web Development, Web Design, CSS" />
+    <meta name="robots" content="NOINDEX, NOFOLLOW" />
+    <title>Selectors CSS</title>
+    <style>
+      /* Element Selector */
+      body {
+        background-color: #333333;
+      }
+
+      /* .is for Classes */
+      .primary-heading {
+        color: blue;
+      }
+
+      /* #is for Id */
+      #welcome {
+        background-color: #f4f4f4f4;
+      }
+
+      /* Multiple Selectors */
+      #welcome,
+      #about {
+        border: 1px solid #cccccc;
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+
+      /* Nested Selector */
+      #welcome p {
+        font-size: 20px;
+      }
+
+      #about {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="welcome">
+      <h2 class="primary-heading">Welcome</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ducimus
+        ipsa repellendus asperiores eveniet quos praesentium fuga debitis labore
+        sunt.
+      </p>
+    </div>
+    <div id="about">
+      <h2>About</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto id, quod
+        doloribus fuga praesentium sequi minus eligendi ad ullam dignissimos?
+      </p>
+    </div>
+  </body>
+</html>

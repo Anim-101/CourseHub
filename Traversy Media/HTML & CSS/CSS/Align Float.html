@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="discription"
+      content="This is to Learn Float and Alignment of CSS"
+    />
+    <meta
+      name="keyword"
+      content="Web Development, Web Design
+    "
+    />
+    <meta name="robots" content="NOINDEX, NOFOLLOW" />
+    <title>Float and Alignment</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 960px;
+        margin: 300px auto;
+      }
+
+      .clr {
+        clear: both;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4em;
+      }
+
+      .box {
+        background: lightgray;
+        border: 1px solid;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+
+      .box p {
+        /* Text Align */
+        text-align: left;
+        text-align: right;
+        text-align: center;
+        text-align: justify;
+      }
+
+      #box-2 {
+        float: left;
+        width: 68%;
+      }
+
+      #box-3 {
+        float: right;
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box-1" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+          quisquam unde fuga minus ullam, eaque aliquid voluptas quos omnis ea!
+        </p>
+      </div>
+      <div id="box-2" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+          quisquam unde fuga minus ullam, eaque aliquid voluptas quos omnis ea!
+        </p>
+      </div>
+      <div id="box-3" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+          quisquam unde fuga minus ullam, eaque aliquid voluptas quos omnis ea!
+        </p>
+      </div>
+      <div class="clr"></div>
+      <div id="box-4" class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+          quisquam unde fuga minus ullam, eaque aliquid voluptas quos omnis ea!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
