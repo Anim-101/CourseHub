@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="discription" content="This is my Learning of Semantic Tags" />
+    <meta name="keyword" content="NOINDEX, NOFOLLOW" />
+    <title>Semantic Tags Using Div</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      ul {
+        padding: 0;
+        list-style: none;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #333333;
+        line-height: 1.4;
+      }
+
+      #header {
+        margin-bottom: 15px;
+        background: #333333;
+        color: #ffffff;
+        padding: 10px;
+      }
+
+      #main {
+        float: left;
+        width: 69%;
+      }
+
+      #sidebar {
+        float: right;
+        width: 29%;
+      }
+
+      .clr {
+        clear: both;
+      }
+
+      #footer {
+        background: #333333;
+        color: #ffffff;
+        padding: 10px;
+      }
+
+      .text-center {
+        display: block;
+        text-align: center;
+      }
+
+      .card {
+        border: 1px solid #dddddd;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <h1>My Dummmy Website</h1>
+      <p>Just Another Dummy Website</p>
+    </div>
+
+    <!-- Main Content Left Side of Page -->
+    <div id="main">
+      <!-- Welcome Section -->
+      <div id="welcome" class="card">
+        <h2>Welcome to our Website</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
+          repudiandae perspiciatis tempore neque veniam quis recusandae! Id
+          porro consectetur inventore deleniti dolores necessitatibus voluptas,
+          itaque quas, modi deserunt sapiente a nobis quaerat blanditiis vero
+          natus veritatis accusamus! Sequi non temporibus aperiam cumque
+          necessitatibus explicabo officiis, quae modi architecto, in
+          eveniet!<br />
+          <a href="#" class="text-center">Click Here</a>
+        </p>
+      </div>
+
+      <!-- Blog Section -->
+      <div id="blog">
+        <h2>From our Blog</h2>
+
+        <!-- Article One -->
+        <div class="article">
+          <h3>Article One</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            doloremque blanditiis delectus quibusdam possimus minus
+            necessitatibus, alias, dolor nisi excepturi quisquam commodi a ipsa
+            cumque.
+          </p>
+        </div>
+
+        <!-- Article Two -->
+        <div class="article">
+          <h3>Article Two</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            assumenda placeat amet, architecto explicabo culpa omnis eveniet hic
+            saepe molestiae vel? Tenetur ad asperiores sit?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar Right Side of Page -->
+    <div id="sidebar" class="card">
+      <h3>Navigation</h3>
+
+      <!-- Navigation -->
+      <ul id="main-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <h3>Contact Us</h3>
+      <ul>
+        <li><strong>Address:</strong>50 Masyaf, Middle East</li>
+        <li><strong>Phone:</strong>(888) 888-8888</li>
+        <li><strong>Email:</strong>me@me.me</li>
+      </ul>
+    </div>
+
+    <div class="clr">
+      <!-- Footer -->
+      <p class="text-center">Copyright &copy; My Website 2020</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="discription"
+      content="This is all about Box Model Margin and Padding"
+    />
+    <meta
+      name="keyword"
+      content="Web Development, Web Design, Box, Model, Padding, Marging, CSS"
+    />
+    <meta name="robots" content="NOINDEX, NOFOLLOW" />
+    <title>Box Model Margin Padding</title>
+    <style>
+      /* CSS Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        background: #f4f4f4;
+        border: 2px #777777 solid;
+        width: 500px;
+
+        /* Padding on All Side */
+        padding: 20px;
+
+        /* Padding Per Side */
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+
+        /* Padding Short Hand = Top Right Bottom Left */
+        padding: 10px 20px 10px 20;
+
+        /* Padding Short Hand = Top/Bottom Left/Right */
+        padding: 10px 20px;
+
+        /* Marging on All Side */
+        margin: 20px;
+
+        /* Margin on All Side */
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+
+        /* Margin Short Hand = Top Right Bottom Left */
+        margin: 10px 20px 10px 20px;
+
+        /* Margin Short Hand = Top/Bottm Left/Right  */
+        margin: 10px 20px;
+      }
+
+      .box h3 {
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h3>Box One</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, natus
+        sed! Quisquam id mollitia rerum perferendis, obcaecati laborum unde
+        officiis consequatur, consectetur et sequi reiciendis, voluptas eos
+        placeat labore reprehenderit.
+      </p>
+    </div>
+    <div class="box">
+      <h3>Box Two</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, natus
+        sed! Quisquam id mollitia rerum perferendis, obcaecati laborum unde
+        officiis consequatur, consectetur et sequi reiciendis, voluptas eos
+        placeat labore reprehenderit.
+      </p>
+    </div>
+  </body>
+</html>
