@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="discription" content="This is all about CSS Variables" />
+    <meta name="keyword" content="Variables, CSS, HTML" />
+    <meta name="robot" content="NOINDEX, NOFOLLOW" />
+    <title>CSS Variables</title>
+    <style>
+      :root {
+        --max-width: 1100px;
+        /* --primary-color: steelblue; */
+        --primary-color: #333333;
+        /* --secondary-color: skyblue; */
+        --secondary-color: #ccc;
+        --light-color: #f4f4f4;
+      }
+
+      .box {
+        --box-1-width: 1;
+        --box-2-width: 2;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4;
+        /* --light-color: #f4f4f4; */
+        background: #f4f4f4;
+      }
+
+      header {
+        background-color: var(--primary-color);
+        color: var(--light-color);
+        text-align: center;
+        border-bottom: 5px var(--secondary-color) solid;
+      }
+
+      .container {
+        display: flex;
+        margin: auto;
+        max-width: var(--max-width);
+      }
+
+      .box {
+        background-color: var(--primary-color);
+        border-bottom: 5px var(--secondary-color) solid;
+        color: var(--light-color);
+        padding: 1rem;
+        margin: 1rem;
+      }
+
+      .box-1 {
+        flex: var(--box-1-width);
+      }
+
+      .box-2 {
+        flex: var(--box-2-width);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CSS Variables</h1>
+    </header>
+    <div class="container">
+      <div class="box box-1">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          maiores laboriosam consequuntur nesciunt sed velit sit obcaecati,
+          numquam consectetur natus tempore atque eius accusantium cum
+          consequatur et. Necessitatibus, laborum dolorem.
+        </p>
+      </div>
+      <div class="box box-2">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          maiores laboriosam consequuntur nesciunt sed velit sit obcaecati,
+          numquam consectetur natus tempore atque eius accusantium cum
+          consequatur et. Necessitatibus, laborum dolorem.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

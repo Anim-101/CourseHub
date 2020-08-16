@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="discription" content="This is Box Shadow" />
+    <meta name="keyword" content="Box Shadow, HTML && CSS" />
+    <meta name="robot" content="NOINDEX, NOFOLLOW" />
+    <title>Box Shadows</title>
+    <style>
+      .container {
+        display: flex;
+      }
+
+      .box {
+        padding: 1rem;
+        margin: 1rem;
+        background: coral;
+        color: white;
+
+        /* Offset - X | Offset - Y | Color */
+        box-shadow: 10px 10px teal;
+
+        /* Offset - X | Offset - Y | Blur-radius | Color */
+        box-shadow: 10px 10px 20px teal;
+
+        /* Negative Values */
+        box-shadow: -10px -10px 20px teal;
+
+        /* Offset - X | Offset - Y | Blur-radius | Spread-radius | Color  */
+        box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
+
+        /* Inset | Offset-X | Offset-Y | Color */
+        box-shadow: inset 3px 3px teal;
+
+        /* Multiple Shadows */
+        box-shadow: 3px 3px 10px teal, -3px -3px 10px olive;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          soluta animi, doloribus eius necessitatibus aliquid.
+        </p>
+      </div>
+      <div class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          soluta animi, doloribus eius necessitatibus aliquid.
+        </p>
+      </div>
+      <div class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          soluta animi, doloribus eius necessitatibus aliquid.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

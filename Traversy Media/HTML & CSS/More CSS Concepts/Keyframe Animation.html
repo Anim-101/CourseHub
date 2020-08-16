@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="discription" content="This is Keyframe animation" />
+    <meta name="keyword" content="Keyframe, Animation, HTML && CSS" />
+    <meta name="robot" content="NOINDEX, NOFOLLOW" />
+    <title>Keyframe Animation</title>
+    <style>
+      body {
+        background: #333333;
+      }
+
+      .box {
+        background: #ffffff;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        /* animation-name: animateOne;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+        animation-direction: alternate-reverse;
+        animation-direction: alternate;
+        animation-timing-function: ease-in;
+        animation-timing-funtion: ease-out;
+        animation-timing-function: ease-in-out; */
+
+        animation: animateOne 5s forwards 1s ease-in-out;
+      }
+
+      @keyframes animateOne {
+        from {
+          top: 0;
+        }
+
+        to {
+          width: 600px;
+          background-color: red;
+          top: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
