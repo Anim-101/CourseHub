@@ -1,0 +1,83 @@
+@import "variables";
+@import "function";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $lightColor;
+  color: $darkColor;
+  font-family: $fontStack;
+  line-height: 1.5rem;
+}
+
+header {
+  background: $darkColor;
+  color: set-text-color($darkColor);
+  padding: 1rem;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.section {
+  padding: 3rem;
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  &-a {
+    background: $primaryColor;
+    color: set-text-color($primaryColor);
+  }
+
+  &-b {
+    background: $secondaryColor;
+    color: set-text-color($secondaryColor);
+  }
+}
+
+// a {
+//   color: #333;
+
+//   &:hover {
+//     color: coral;
+//   }
+// }
+
+%btn-shared {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.btn {
+  &-light {
+    @extend %btn-shared;
+    background-color: $lightColor;
+    color: set-text-color($lightColor);
+
+    &:hover {
+      @include transform(rotate(20deg));
+      background-color: darken($lightColor, 10%);
+    }
+  }
+
+  &-dark {
+    @extend %btn-shared;
+    background-color: $darkColor;
+    color: set-text-color($darkColor);
+
+    &:hover {
+      @include transform(rotate(-20deg));
+      background-color: lighten($darkColor, 10%);
+    }
+  }
+}
