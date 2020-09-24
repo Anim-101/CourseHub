@@ -1,0 +1,1 @@
+## My Coding Snippets during doing the course "Automate the Boring Stuff with Python Programming" by Al Sweigart in Udemy platform.
