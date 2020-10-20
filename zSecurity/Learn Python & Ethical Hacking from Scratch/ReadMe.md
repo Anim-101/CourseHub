@@ -1,1 +1,0 @@
-## Courses and my coding experiences of zSecurity's "Learning Python & Ethical Hacking Scratch" course.
