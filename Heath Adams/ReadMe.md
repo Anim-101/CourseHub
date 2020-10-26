@@ -1,0 +1,1 @@
+# My Testing practices and Snippets based on Heath Adams's courses
