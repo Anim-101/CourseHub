@@ -1,17 +1,29 @@
 from django.shortcuts import render, redirect
-from django.contrib import messages
+from django.contrib import messages, auth
 from django.contrib.auth.models import User
 
 
 def login(request):
     if request.method == 'POST':
-        # Login USER
-        pass
+        username = request.POST['username']
+        password = request.POST['password']
+
+        print(username)
+        print(password)
+
+        user = auth.authenticate(username=username, password=password)
+
+        print(user)
+
+        if user is not None:
+            auth.login(request, user)
+            messages.success(request, 'You are now Logged in.')
+            return redirect('dashboard')
+        else:
+            messages.error(request, 'Invalid credentials')
+            return redirect('login')
     else:
         return render(request, 'accounts/login.html')
-
-    return render(request, 'accounts/register.html')
-    return render(request, 'accounts/login.html')
 
 
 def register(request):
@@ -34,18 +46,28 @@ def register(request):
                     messages.error(request, 'That email is being used')
                     return redirect('register')
                 else:
-                    return
+                    user = User.objects.create_user(
+                        username=username, password=password, email=email, first_name=first_name, last_name=last_name)
+                    # Login after request
+                    # auth.login(request, user)
+                    # messages.success(request, "You are Logged in")
+                    # return redirect('index')
+                    user.save()
+                    messages.success(request, "You are now Registered")
+                    return redirect('login')
         else:
             messages.error(request, 'Password does not match')
             return redirect('register')
     else:
         return render(request, 'accounts/register.html')
-
     return render(request, 'accounts/register.html')
 
 
 def logout(request):
-    return redirect('index')
+    if request.method == 'POST':
+        auth.logout(request)
+        messages.success(request, 'You are logged out')
+        return redirect('index')
 
 
 def dashboard(request):

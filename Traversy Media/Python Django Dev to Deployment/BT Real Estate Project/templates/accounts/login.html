@@ -2,6 +2,8 @@
 
 {% load humanize %}
 
+{% block title %} | Account Login {% endblock %}
+
 {% block content %}
 
 <section id="login" class="bg-light py-5">
@@ -16,7 +18,7 @@
             <div class="card-body">
               <!-- Alerts -->
               {% include 'partials/_alerts.html' %}
-              <form action="{% url 'login' %}">
+              <form action="{% url 'login' %}" method="POST">
                 {% csrf_token %}
                 <div class="form-group">
                   <label for="username">Username</label>
@@ -35,7 +37,7 @@
         </div>
       </div>
     </div>
-  </section>
+</section>
 
 
 {% endblock %}
