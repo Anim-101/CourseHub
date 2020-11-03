@@ -6,6 +6,7 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework import filters
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.settings import api_settings
+from rest_framework.permissions import IsAuthenticated
 
 from profiles_api import models
 from profiles_api import serializers
@@ -31,6 +32,7 @@ class HelloAPIView(APIView):
     def post(self, request):
         """ Creating a hello message with our name """
         serializer = self.serializer_class(data = request.data)
+        print(serializer)
 
         if serializer.is_valid():
             name = serializer.validated_data.get('name')
@@ -102,10 +104,9 @@ class HelloViewSet(viewsets.ViewSet):
         """ Handling remove of an object """
         return Response({'http_method': 'DELETE'})
 
-
 # Modelviewset
 class UserProfileViewSet(viewsets.ModelViewSet):
-    """ Handling create and upate of a profile """
+    """ Handling create and update of a profile """
     serializer_class = serializers.UserProfileSerializer
     queryset = models.UserProfile.objects.all()
     authentication_classes = (TokenAuthentication,)
@@ -117,3 +118,18 @@ class UserProfileViewSet(viewsets.ModelViewSet):
 class UserLoginApiView(ObtainAuthToken):
     """ Handling create user authentication tokens """
     renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
+
+
+class UserProfileFeedViewSet(viewsets.ModelViewSet):
+    """ Handling create, read and update profile feed items """
+    authentication_classes = (TokenAuthentication,)
+    serializer_class = serializers.ProfileFeedItemSerializer
+    queryset = models.ProfileFeedItem.objects.all()
+    permission_classes = (
+        permissions.UpdateOwnStatus,
+        IsAuthenticated,
+    )
+
+    def perform_create(self, serializer):
+        """ Setting the user profile to the looged in user """
+        serializer.save(user_profile = self.request.user)
