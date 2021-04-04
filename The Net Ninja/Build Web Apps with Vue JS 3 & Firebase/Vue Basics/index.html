@@ -21,19 +21,21 @@
     <h1>Hello Vue :0</h1>
     <div id="app">
         <div v-if="showBooks">
-            <p>{{ title }} - {{ author }} - {{ age }}</p>
+            <!-- <p>{{ books[0].title }} - {{ books[0].author }}</p>
+            <p>{{ books[1].title }} - {{ books[1].author }}</p>
+            <p>{{ books[2].title }} - {{ books[2].author }}</p> -->
+            <ul>
+                <li v-for="book in books">
+                    <h3>{{ book.title }}</h3>
+                    <p>{{ book.author }}</p>
+                </li>
+            </ul>
         </div>
         <button @click="toggleShowBooks">
             <span v-if="showBooks">Hide Books</span>
             <span v-else>Show Books</span>
         </button>
         <div v-show="showBooks">Currently Showing Books</div>
-        <br>
-        <!-- Mouse Events -->
-        <div class="box" @mouseover="handleEvent($event, 5)">Mouse Over</div>
-        <div class="box" @mouseleave="handleEvent">Mouse Leave</div>
-        <div class="box" @dblclick="handleEvent">Double Click</div>
-        <div class="box" @mousemove="handleMouseMove">Position- {{ x }} {{ y }}</div>
     </div>
     <script src="app.js"></script>
 </body>
