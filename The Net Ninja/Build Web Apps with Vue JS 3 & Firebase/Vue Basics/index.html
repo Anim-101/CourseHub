@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Vue JS</title>
     <script src="https://unpkg.com/vue@3.0.2"></script>
+    <style>
+        .box {
+            padding: 100px 0;
+            width: 400px;
+            text-align: center;
+            background: #ddd;
+            margin: 20px;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
     <h1>Hello Vue :0</h1>
@@ -15,10 +25,15 @@
         </div>
         <button @click="toggleShowBooks">
             <span v-if="showBooks">Hide Books</span>
-            <!-- <span v-if="!showBooks">Show Books</span> -->
             <span v-else>Show Books</span>
         </button>
         <div v-show="showBooks">Currently Showing Books</div>
+        <br>
+        <!-- Mouse Events -->
+        <div class="box" @mouseover="handleEvent($event, 5)">Mouse Over</div>
+        <div class="box" @mouseleave="handleEvent">Mouse Leave</div>
+        <div class="box" @dblclick="handleEvent">Double Click</div>
+        <div class="box" @mousemove="handleMouseMove">Position- {{ x }} {{ y }}</div>
     </div>
     <script src="app.js"></script>
 </body>
