@@ -2,7 +2,14 @@
   <h1>{{ title }}</h1>
   <p>Welcome...</p>
   <div v-if="showModal">
-    <Modal :header="header"  :text="text" :theme="theme" @close="toggleModal" />
+    <Modal :theme="theme" @close="toggleModal">
+      <template v-slot:links>
+        <a href="#">Sign Up</a>
+        <a href="">More Info</a>
+      </template>
+      <h1>Ninja Giveaway</h1>
+      <p>Grab your ninja Swag for half price.</p>
+    </Modal>
   </div>
   <button @click.alt="toggleModal">Open Modal (alt)</button>
 </template>
@@ -19,7 +26,7 @@ export default {
       header: 'Sign up for the Giveaway!',
       text: 'Grab your ninja sawag for half of the price',
       theme: 'sale',
-      // theme: 'asdad'
+      // theme: 'asdad',
       showModal: false
     }
   },
