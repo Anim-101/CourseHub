@@ -11,7 +11,15 @@
       <p>Grab your ninja Swag for half price.</p>
     </Modal>
   </div>
+
+  <div v-if="showModalTwo">
+    <Modal @close="toggleModalTwo">
+      <h1>Signed up to newsletter</h1>
+      <p>For updates and promo codes.</p>
+    </Modal>
+  </div>
   <button @click.alt="toggleModal">Open Modal (alt)</button>
+  <button @click="toggleModalTwo">Open Modal</button>
 </template>
 
 <script>
@@ -23,16 +31,18 @@ export default {
   data() {
     return {
       title: 'My First Vue Application',
-      header: 'Sign up for the Giveaway!',
-      text: 'Grab your ninja sawag for half of the price',
       theme: 'sale',
       // theme: 'asdad',
-      showModal: false
+      showModal: false,
+      showModalTwo: false
     }
   },
   methods: {
     toggleModal() {
       this.showModal = !this.showModal
+    },
+    toggleModalTwo() {
+      this.showModalTwo = !this.showModalTwo
     }
   }
 }
